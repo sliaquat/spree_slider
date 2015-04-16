@@ -36,6 +36,21 @@
     <% end %>
   </div>
 
+
+  <div class="col-md-6">
+    <%= f.field_container :super_text do %>
+        <%= f.label :super_text, t(:super_text) %><br>
+        <%= f.text_field :super_text, :class => 'fullwidth', class: "form-control" %>
+    <% end %>
+  </div>
+
+  <div class="col-md-6">
+    <%= f.field_container :button_name do %>
+        <%= f.label :button_name, t(:button_name) %><br>
+        <%= f.text_field :button_name, :class => 'fullwidth', class: "form-control" %>
+    <% end %>
+  </div>
+
   <div class="col-md-12">
     <%= f.field_container :body do %>
       <%= f.label :body, t(:body) %><br>
