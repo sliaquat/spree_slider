@@ -8,7 +8,7 @@ class Spree::Admin::SlidesController < Spree::Admin::ResourceController
   private
 
   def slide_params
-    params.require(:slide).permit(:name, :body, :link_url, :published, :image, :position, :product_id)
+    params.require(:slide).permit(:name, :body, :link_url, :published, :image, :position, :product_id, :dark)
   end
 
 end
