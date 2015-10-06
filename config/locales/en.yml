@@ -17,8 +17,8 @@ en:
       spree/slide: "Slide"
 
   spree_slider:
-    config_name: "Spree Slider"
-    config_description: "Manage Spree Slider contents"
+    config_name: "Home Page Slider"
+    config_description: "Manage Home Page Slider contents"
     title: "Slides"
     new_slide: "New Slide"
     editing_slide: "Editing Slide"
