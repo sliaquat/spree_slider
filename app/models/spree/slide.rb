@@ -1,6 +1,11 @@
 class Spree::Slide < ActiveRecord::Base
 
-  has_attached_file :image
+  has_attached_file :image,
+                    styles: { large: '900x900>', xlarge: '1200x1200>' },
+                    default_style: :large,
+                    convert_options: { all: '-strip -auto-orient -colorspace sRGB' }
+
+
   validates_attachment :image, content_type: { content_type: ["image/jpg", "image/jpeg", "image/png", "image/gif"] }
   scope :published, -> { where(published: true).order('position ASC') }
 
